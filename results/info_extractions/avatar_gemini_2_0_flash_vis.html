@@ -1,0 +1,245 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Review – Avatar: Fire and Ash 
+Avatar: Fire and Ash (2025), directed by James Cameron, continues his 
+reputation for building <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">expansive cinematic worlds</span> that place characters in 
+overwhelming circumstances and push visual storytelling to extraordinary limits. His 
+style in previous films establishes protagonists in richly imagined environments with 
+towering conflicts, and he once again uses the vastness of Pandora to <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">challenge both 
+his characters and his audience</span>. Cameron’s work in Avatar (2009) and The Way of 
+Water (2022) already demonstrated his fascination with ecological systems and 
+cultural tension, and this new chapter appears to deepen those themes through 
+harsher landscapes and more volatile intertribal conflict. 
+This time, the story brings viewers into Pandora’s volcanic badlands, home of the 
+Ash People—a Na’vi clan shaped by fire, ash, and survival in one of the planet’s most 
+hostile regions. Early reports describe this tribe as more militant and spiritually 
+divergent, creating immediate tension with Jake Sully’s family as they seek refuge 
+among rival clans. The introduction of a Na’vi civil conflict shifts the series away from 
+a simple humans-versus-Na’vi structure and toward a <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">more complex internal struggle</span>, 
+suggesting broader thematic ambition and <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">emotional stakes</span>. 
+Throughout the film, Cameron uses these new environments to explore 
+unfamiliar physical challenges and dynamic action sequences. Volcanic storms, ash-
+covered battlegrounds, and explosive terrain add <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">fresh layers to the visual spectacle</span> 
+that the franchise is known for. According to industry commentary, the film’s runtime 
+exceeds three hours, giving Cameron room to develop these worlds in detail while 
+expanding character arcs and intertribal tensions that shape the narrative. 
+A central focus of anticipation surrounds the character of Quaritch, whose 
+transformation in previous films leads to an identity crisis that could define his role in 
+Fire and Ash. Reports suggest he may face conflicts between his human memories 
+and Na’vi form, hinting at possible moral ambiguity or even redemption. This 
+continues Cameron’s long-running interest in characters caught between biological, 
+technological, or cultural identities—an interest clearly visible across his filmography. 
+The anticipation surrounding Fire and Ash also reflects Cameron’s commitment
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+to scale and innovation. Reports mention that <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">Disney CEO Bob Iger praised the film as 
+“magnificent,”</span> suggesting Camerons continued pursuit of visual and technical 
+breakthroughs has resonated with studio leadership. This aligns with Cameron’s 
+history of pushing cinema forward through new technology, whether in CGI, motion 
+capture, or world-building. 
+Although the full film has not yet been released at the time of early reviews, the 
+imagery, tone, and narrative direction presented so far imply a project that continues 
+Cameron’s tendency toward <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">massive emotional and visual ambition</span>. His exploration 
+of ecological themes, cultural divergence, and identity crisis suggests a story that is as 
+much about survival and reconciliation as it is about spectacle. If executed well, Fire 
+and Ash could become <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">one of the most impactful entries in the franchise</span>, balancing 
+Cameron’s signature world-building with a deeper examination of Pandora’s internal 
+divisions. 
+Overall, Avatar: Fire and Ash seems poised to deliver another <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">expansive, visually 
+striking chapter</span> in the series. With its darker environments, escalating conflict, and 
+potential for complex character evolution, the film continues to reflect <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">Cameron’s 
+long-standing strengths as a filmmaker who blends technological innovation with 
+emotionally driven storytelling</span>.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="9" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/10</span> |
+          Pos <span id="posInfo">[141-167]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "expansive cinematic worlds", "color": "#C8E6C9", "startPos": 141, "endPos": 167, "beforeText": "**Page 1**\n&quot;&quot;&quot;\nReview \u2013 Avatar: Fire and Ash \nAvatar: Fire and Ash (2025), directed by James Cameron, continues his \nreputation for building ", "extractionText": "expansive cinematic worlds", "afterText": " that place characters in \noverwhelming circumstances and push visual storytelling to extraordinary limits. His \nstyle in previous films establishes p", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">cinematic worlds</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">expansive</span>}</div>"}, {"index": 1, "class": "audience_impact", "text": "challenge both his characters and his audience", "color": "#D2E3FC", "startPos": 437, "endPos": 484, "beforeText": "n previous films establishes protagonists in richly imagined environments with \ntowering conflicts, and he once again uses the vastness of Pandora to ", "extractionText": "challenge both \nhis characters and his audience", "afterText": ". Cameron\u2019s work in Avatar (2009) and The Way of \nWater (2022) already demonstrated his fascination with ecological systems and \ncultural tension, and", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">challenged</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">the vastness of Pandora</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">his audience</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "more complex internal struggle", "color": "#C8E6C9", "startPos": 1234, "endPos": 1264, "beforeText": "efuge \namong rival clans. The introduction of a Na\u2019vi civil conflict shifts the series away from \na simple humans-versus-Na\u2019vi structure and toward a ", "extractionText": "more complex internal struggle", "afterText": ", \nsuggesting broader thematic ambition and emotional stakes. \nThroughout the film, Cameron uses these new environments to explore \nunfamiliar physica", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Na\u2019vi civil conflict</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">more complex</span>}</div>"}, {"index": 3, "class": "audience_impact", "text": "emotional stakes", "color": "#D2E3FC", "startPos": 1308, "endPos": 1324, "beforeText": "s the series away from \na simple humans-versus-Na\u2019vi structure and toward a more complex internal struggle, \nsuggesting broader thematic ambition and ", "extractionText": "emotional stakes", "afterText": ". \nThroughout the film, Cameron uses these new environments to explore \nunfamiliar physical challenges and dynamic action sequences. Volcanic storms, ", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">anticipation</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">more complex internal struggle</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "fresh layers to the visual spectacle", "color": "#C8E6C9", "startPos": 1528, "endPos": 1564, "beforeText": "ments to explore \nunfamiliar physical challenges and dynamic action sequences. Volcanic storms, ash-\ncovered battlegrounds, and explosive terrain add ", "extractionText": "fresh layers to the visual spectacle", "afterText": " \nthat the franchise is known for. According to industry commentary, the film\u2019s runtime \nexceeds three hours, giving Cameron room to develop these wor", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Volcanic storms, ash-covered battlegrounds, and explosive terrain</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fresh layers</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "Disney CEO Bob Iger praised the film as \u201cmagnificent,\u201d", "color": "#C8E6C9", "startPos": 2456, "endPos": 2511, "beforeText": "aphy. \nThe anticipation surrounding Fire and Ash also reflects Cameron\u2019s commitment\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nto scale and innovation. Reports mention that ", "extractionText": "Disney CEO Bob Iger praised the film as \n\u201cmagnificent,\u201d", "afterText": " suggesting Camerons continued pursuit of visual and technical \nbreakthroughs has resonated with studio leadership. This aligns with Cameron\u2019s \nhistor", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">magnificent</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "massive emotional and visual ambition", "color": "#C8E6C9", "startPos": 2964, "endPos": 3001, "beforeText": " at the time of early reviews, the \nimagery, tone, and narrative direction presented so far imply a project that continues \nCameron\u2019s tendency toward ", "extractionText": "massive emotional and visual ambition", "afterText": ". His exploration \nof ecological themes, cultural divergence, and identity crisis suggests a story that is as \nmuch about survival and reconciliation ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">project</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">massive emotional and visual ambition</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "one of the most impactful entries in the franchise", "color": "#C8E6C9", "startPos": 3222, "endPos": 3272, "beforeText": "ity crisis suggests a story that is as \nmuch about survival and reconciliation as it is about spectacle. If executed well, Fire \nand Ash could become ", "extractionText": "one of the most impactful entries in the franchise", "afterText": ", balancing \nCameron\u2019s signature world-building with a deeper examination of Pandora\u2019s internal \ndivisions. \nOverall, Avatar: Fire and Ash seems poise", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Fire and Ash</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">most impactful</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "expansive, visually striking chapter", "color": "#C8E6C9", "startPos": 3443, "endPos": 3480, "beforeText": "s signature world-building with a deeper examination of Pandora\u2019s internal \ndivisions. \nOverall, Avatar: Fire and Ash seems poised to deliver another ", "extractionText": "expansive, visually \nstriking chapter", "afterText": " in the series. With its darker environments, escalating conflict, and \npotential for complex character evolution, the film continues to reflect Camer", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Avatar: Fire and Ash</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">expansive, visually striking</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "Cameron\u2019s long-standing strengths as a filmmaker who blends technological innovation with emotionally driven storytelling", "color": "#C8E6C9", "startPos": 3625, "endPos": 3748, "beforeText": "apter in the series. With its darker environments, escalating conflict, and \npotential for complex character evolution, the film continues to reflect ", "extractionText": "Cameron\u2019s \nlong-standing strengths as a filmmaker who blends technological innovation with \nemotionally driven storytelling", "afterText": ".\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">long-standing strengths</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
