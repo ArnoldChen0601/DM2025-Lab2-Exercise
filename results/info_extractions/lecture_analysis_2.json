@@ -1,0 +1,38 @@
+{
+    "title": "Data Matrix vs. Document Data",
+    "video_segment": "114:59 - 118:58",
+    "content_flow": [
+        {
+            "content_type": "slide_description",
+            "text": "The slide is titled \"Data Matrix vs. Document Data\" with a URL provided: https://cool.ntu.edu.tw/courses/50367/quizzes/59560. It features a stylized \"cool\" logo and the text \"National Taiwan University\"."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "So next one is for you to working with this um um the exercise in NTCU. And some student tell me that they don't have NTCU access. You probably would like to have it within this week if you are the people who join last week. I think from my um my my student list right there, I think everyone supposed is invited. But if you are one of the people who join last week, then you suppose you already got the invitation later. Yes, you need to wait for one more week because just join the class maybe over the weekend. Yes, you need to wait for one more week. If you are the people who already join one weeks before, then you suppose you already got the invitation later.",
+            "timestamp": "115:00 - 115:43"
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "Yes, you need to wait for one more week. If you join with the previous email, but really change the school email. The school will change. Try to indicate that. Our NTCU, I will try to make sure they give you the school email one. We will check that question for you. I don't know what's the answer. Okay, we need to check with the staff in NTCU.",
+            "timestamp": "115:46 - 116:13"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "The slide displays a quiz summary showing \"Attempts: 9 out of 9\" and a question about characteristics of data matrix datasets. It lists three characteristics with percentages of respondents who answered correctly: \"Consist of numerical values\" (100%), \"Often organized in a tabular format\" (100%), and \"May contain unstructured text data\" (8%)."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "Okay, so this is a comparison for the data matrix with the document data.",
+            "timestamp": "116:14 - 116:25"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "This slide shows a quiz question: \"Which of the following characteristics are commonly associated with Data Matrix Datasets? (Choose all that apply)\". It lists three options with response data: \"Consist of numerical values\" (29 respondents, 97% correct), \"Often organized in a tabular format\" (46 respondents, 92% correct), and \"Primarily used for statistical analysis and machine learning models\" (46 respondents, 92% correct)."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "So again, here is just slide summary for the data matrix data set right here. So then, what is the characteristic about uh uh about data matrix dataset? First, you need to know they are consists of numerical values. So then, um, they are usually in this tabular format. So we call them tabular formats. And they don't have unstructured data. They will not have unstructured data. And they can utilize a lot of statistic method and machine learning way to working with that. If you took machine learning course, usually they assume the data already been convert into data matrix. They will consider about that. So a lot of machine learning, starting from matrix operation. So then because of it, your data need to go through the processing to convert them to corresponding data matrix. But what about the document data? Then they are not structured data. They can contain the paragraph, sentence and words. And then in order for you to convert them to a matrix side, but then originally they are paragraph and the sentence and words.",
+            "timestamp": "117:39 - 118:58"
+        }
+    ]
+}
